@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HodlInfo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>HODLINFO</h1>
+            <div class="price-info">
+                <div class="price">₹ <span id="best-price">0</span></div>
+                <div class="percentage-change">
+                    <span id="change-5mins">0 %</span> (5 Mins)
+                </div>
+                <div class="percentage-change">
+                    <span id="change-1hour">0 %</span> (1 Hour)
+                </div>
+                <div class="percentage-change">
+                    <span id="change-1day">0 %</span> (1 Day)
+                </div>
+                <div class="percentage-change">
+                    <span id="change-7days">0 %</span> (7 Days)
+                </div>
+            </div>
+        </header>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Platform</th>
+                    <th>Last Traded Price</th>
+                    <th>Buy / Sell Price</th>
+                    <th>Difference</th>
+                    <th>Savings</th>
+                </tr>
+            </thead>
+            <tbody id="ticker-table">
+            </tbody>
+        </table>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
